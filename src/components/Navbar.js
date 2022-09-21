@@ -38,9 +38,9 @@ const UserBox=styled(Box)(({theme})=>({
 }))
 
 const Navbar = () => {
-    const {open,setOpen}=useState(false)
+    const [open,setOpen]=useState(false)
   return (
-    <AppBar position="stick">
+    <AppBar position="sticky">
         <StyledToolbar>
             <Typography variant="h6" sx={{display:{xs:"none",
         sm:"block"}}}>
@@ -80,6 +80,7 @@ const Navbar = () => {
           vertical: 'top',
           horizontal: 'right',
         }}
+        
       >
         <MenuItem >Profile</MenuItem>
         <MenuItem >My account</MenuItem>
