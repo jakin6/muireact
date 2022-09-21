@@ -5,6 +5,8 @@ import Sidebar from "./components/Sidebar";
 import Feed from "./components/Feed";
 import {Box,Container,Stack} from "@mui/material"
 import Navbar from "./components/Navbar";
+import Add from "./components/Add";
+
 function App() {
 
   return (
@@ -16,6 +18,7 @@ function App() {
         <Feed/>
         <Rightbar/>
       </Stack>
+      <Add/>
     </Box>
   
   );
